@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>138</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>small3dlib</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_tex">
+        <property name="text">
+         <string>[1] to change object</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_tex_hd">
+        <property name="text">
+         <string>[PgUp]/[PgDn] for zoom</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_vscreen">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>display</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>138</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMENU">
+    <property name="title">
+     <string>MENU</string>
+    </property>
+    <addaction name="actionZoom_X1"/>
+    <addaction name="actionZoom_X2"/>
+    <addaction name="actionZoom_X4"/>
+    <addaction name="actionZoom_X8"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport_texture"/>
+    <addaction name="actionConvert_object"/>
+   </widget>
+   <addaction name="menuMENU"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionZoom_X2">
+   <property name="text">
+    <string>Zoom X2</string>
+   </property>
+  </action>
+  <action name="actionZoom_X4">
+   <property name="text">
+    <string>Zoom X4</string>
+   </property>
+  </action>
+  <action name="actionZoom_X8">
+   <property name="text">
+    <string>Zoom X8</string>
+   </property>
+  </action>
+  <action name="actionZoom_X1">
+   <property name="text">
+    <string>Zoom X1</string>
+   </property>
+  </action>
+  <action name="actionExport_texture">
+   <property name="text">
+    <string>Convert texture</string>
+   </property>
+  </action>
+  <action name="actionConvert_object">
+   <property name="text">
+    <string>Convert object</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
